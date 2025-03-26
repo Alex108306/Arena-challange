@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171292039-5"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-171292039-5');
+		</script>
+		
+		<title>The BARN Challenge 2025</title>
+		<link rel="icon" type="image/x-icon" href="../../xuesu_website_files/RXX_gmu_square.png">
+		<meta name="description" content="website for ICRA 2025 BARN Challenge">
+		<meta name="keywords" content="robotics, navigation, mobile robots">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script type="text/x-mathjax-config">
+	      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	    </script>
+	    <script type="text/javascript" async
+	      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+	    </script>
+	</head>
+
+
+	<body>
+		<header id="main-header">
+		</header>
+
+		<section id="showcase1">
+		</section>
+
+		<div class="main-container">
+			<aside id="sidebar">
+				<ul>
+					<li><a href="#about">About</a></li>
+                    <li><a href="#the challenge">The Challenge</a></li>
+                    <li><a href="#competition rules">Competition Rules</a></li>
+                    <li><a href="#leaderboard">Leaderboard</a></li>
+                    <li><a href="#participation">Participation</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#organizers">Organizers</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li><a href="#contact">Contact</a></li>
+				</ul>
+			</aside>
+			<main>
+				<h1>ICRA 2025 BARN Challenge</h1>
+
+				<center>
+				Join us on Slack<br>
+				<a href="https://join.slack.com/t/thebarnchallenge/shared_invite/zt-2fd8ozkue-vU6TIJv3O4gWQdsFjSFBaQ" target="_blank"><img src="challenge_images/slack.png" alt="Slack" style="height: 50pt"></a><br>
+				</center>
+
+				<br>
+				<h2>
+                Wondering how the state-of-the-art navigation systems work on autonomous navigation in highly-constrained spaces? Check out our detailed report on the results and findings of The BARN Challenge at ICRA 2024 <a href="../../papers/barn24_report.pdf" target="_blank">here</a>! 
+                </h2>
+                <br>
+
+				<!-- <h2>
+                Congrats LiCS-KI, MLDA_EEE, and AIMS for winning the 1st, 2nd, and 3rd place of The BARN Challenge at ICRA 2025! See you next year! 
+                </h2> -->
+               <!--  <center>
+					<img src="challenge_images/barn_at_icra_2024.jpg" alt="Physical Example" width="650">
+				</center> -->
+
+				<section id="about">
+                    <h2>About</h2>
+        				<p>Designing autonomous robot navigation systems has been a topic of interest to the robotics community for decades. Indeed, many existing navigation systems allow robots to move from one point to another in a collision-free manner, which may create the impression that navigation is a solved problem. However, autonomous mobile robots still struggle in many scenarios, e.g., colliding with or getting stuck in novel and tightly constrained spaces. These troublesome scenarios have many real-world implications, such as poor navigation performance in adversarial search and rescue environments, in naturally cluttered daily households, and in congested social spaces such as classrooms, offices, and cafeterias. Meeting these real-world challenges requires systems that can both successfully and efficiently navigate the environment with confidence, posing fundamental challenges to current autonomous systems, from perception to control. Therefore, the Benchmark Autonomous Robot Navigation (BARN) Challenge aims at creating a benchmark for state-of-the-art navigation systems and pushing the boundaries of their performance in these challenging and highly constrained environments.</p>
+        				<p>At ICRA 2024, The Third BARN Challenge in Yokohama had six teams competed in the simulation competition and top four teams in the physical finals. We congratulate <a href="https://www.kaist.ac.kr/en/" target="_blank">LiCS-KI</a>, <a href="https://www.ntu.edu.sg/" target="_blank">MLDA_EEE</a>, and <a href="https://www.polyu.edu.hk/en/" target="_blank">AIMS</a> for winning the 1st, 2nd, and 3rd place of The BARN Challenge at ICRA 2024. We published the results and findings about how the state-of-the-art navigation systems work in highly-constrained spaces in <a href="../../papers/barn24_report.pdf" target="_blank">IEEE Robotics and Automation Magazine</a>.</p>
+        				<p>At ICRA 2023, we successfully continued with our second BARN Challenge in London. Ten teams competed in the simulation competition and the top six teams advanced into the physical finals. We congratulate <a href="https://www.kuleuven.be/english/kuleuven" target="_blank">KUL</a>+<a href="https://www.flandersmake.be/en" target="_blank">FM</a>, <a href="https://www.inventec.com/en" target="_blank">INVENTEC</a>, and <a href="https://www.ual.es/en" target="_blank">University of Almeria</a> for winning the 1st, 2nd, and 3rd place of The BARN Challenge at ICRA 2023. We published the results and findings about how the state-of-the-art navigation systems work in highly-constrained spaces in <a href="../../papers/barn23_report.pdf" target="_blank">IEEE Robotics and Automation Magazine</a>.</p>
+        				<p>At ICRA 2022, we successfully launched the first BARN Challenge in Philadelphia. Five teams competed in the simulation competition and the top three teams advanced into the physical finals. We congratulate <a href="https://amrl.cs.utexas.edu/" target="_blank">UT AMRL</a>, <a href="https://www.bezzorobotics.com/" target="_blank">UVA AMR</a>, and <a href="https://sites.temple.edu/trail/" target="_blank">Temple TRAIL</a> for winning the 1st, 2nd, and 3rd place of The BARN Challenge at ICRA 2022. We published the results and findings about how the state-of-the-art navigation systems work in highly-constrained spaces in <a href="../../papers/barn22_report.pdf" target="_blank">IEEE Robotics and Automation Magazine</a>.</p>
+						<br>
+        				<br>
+				</section>
+
+				<section id="the challenge">
+                    <h2>The Challenge</h2>
+                    	<p>
+        				The BARN Challenge will take place primarily on the simulated <a href="../BARN/BARN.html" target="_blank">BARN dataset</a> and also physically at the conference venue in Yokohama.
+        				 <!-- (depending on COVID restrictions).  -->
+        				</p>
+        				<p>
+        				The BARN dataset comprises 300 pre-generated navigation environments, ranging from easy open spaces to difficult highly constrained ones, and an environment generator that can generate novel BARN environments. The task is to navigate a Clearpath Jackal robot from a predefined start to a goal location as quickly as possible without any collision. The Jackal robot will be standardized with a 2D LiDAR, a motor controller with a max speed of 2m/s, and appropriate computational resources. Participants will need to develop navigation systems which consume the standardized LiDAR input, run all computation onboard using the provided resources, and output motion commands to drive the motors. Participants are welcome to use any approaches to tackle the navigation problem, such as using classical sampling-based or optimization-based planners, end-to-end learning, or hybrid approaches. The following infrastructure will be provided by the competition organizers: 
+        				</p>
+        				<ul>
+							<li>
+								The 300 pre-generated <a href="../BARN/BARN_dataset.zip" target="_blank">BARN environments</a>
+							</li>
+							<li>
+								The BARN <a href="https://github.com/dperille/jackal-map-creation" target="_blank">environment generator to generate novel environments</a>
+							</li>
+							<li>
+								Baseline navigation systems including classical (<a href="https://github.com/Daffan/nav-competition-icra2022/tree/main" target="_blank">default DWA</a>, <a href="https://github.com/Daffan/nav-competition-icra2022/tree/fast_dwa" target="_blank">fast DWA</a>, and <a href="https://github.com/Daffan/nav-competition-icra2022/tree/eband" target="_blank">E-Band</a>), end-to-end learning (<a href="https://github.com/Daffan/nav-competition-icra2022/tree/e2e" target="_blank">e2e RL</a> and <a href="https://github.com/Daffan/nav-competition-icra2022/tree/LfH" target="_blank">LfLH</a>), and hybrid (<a href="https://github.com/Daffan/nav-competition-icra2022/tree/applr" target="_blank">APPLR</a>) approaches
+							</li>
+							<li>
+								A <a href="https://github.com/Daffan/ros_jackal" target="_blank">training pipeline</a> running the standardized Jackal robot in Gazebo simulation with Robot Operating System (ROS) Melodic (in Ubuntu 18.04), with the option of being containerized in Docker or Singularity containers for fast and standardized setup and evaluation
+							</li>
+							<li>
+								A standardized <a href="https://github.com/Daffan/nav-competition-icra2022" target="_blank">evaluation pipeline</a> to compete against other navigation systems
+							</li>
+						</ul>
+        				<br>
+        				<br>
+				</section>
+
+				<section id="competition rules">
+					<h2>Competition Rules</h2>
+						<p>
+							During the competition, another 50 new BARN evaluation environments will be generated, which will not be accessible to the public. Each participating team is required to submit the developed navigation system as a (collection of) launchable ROS node(s). The final performance will be evaluated based on a standardized metric that considers navigation success rate (collision or not reaching the goal count as failure), actual traversal time, and environment difficulty (measured by optimal traversal time). Specially, the score $s$ for navigating each environment $i$ will be computed as 
+						<br>
+						<br>	
+						<center>
+							$$s_i = 1^{\textrm{success}} \times \frac{\textrm{OT}}{\textrm{clip}(\textrm{AT}_i, 2\textrm{OT}_i, 8\textrm{OT}_i)}$$
+							<!-- <img src="challenge_images/score.png" alt="Score" height="50"> -->
+						</center>
+						<br>
+						where the indicator $1^{\textrm{success}}$ is set to $1$ if the robot reaches the navigation goal without any collisions, and set to $0$ otherwise. AT denotes the actual traversal time, while OT denotes the optimal traversal time, as an indicator of the environment difficulty and measured by the shortest traversal time assuming the robot always travels at its maximum speed ($2\textrm{m/s}$):
+						<br>
+						<br>
+						<center>
+							$$\textrm{OT}_i = \frac{\textrm{Path Length}_i}{\textrm{Maximum Speed}}$$ 
+							<!-- <img src="challenge_images/time.png" alt="Optimal Traversal Time" height="50"> -->
+						</center>
+						<br>
+						The Path Length is provided by the BARN dataset based on Dijkstra's search. The clip function clips $\textrm{AT}_i$ within $2\textrm{OT}_i$ and $8\textrm{OT}_i$, in order to assure navigating extremely quickly or slowly in easy or difficult environments won't disproportionally scale the score. <b>Notice that we changed the upper performance bound $4\textrm{OT}_i$ from the past two years to $2\textrm{OT}_i$ this year, considering the improving navigation performance.</b> The overall score of each team is the score averaged over all 50 test BARN environments, with 10 trials in each environment. Higher scores indicate better navigation performance. 
+					</p>
+
+					<p> 
+						During the in-person conference in London, physical obstacle courses will be set up at the conference venue using cardboard boxes (see example below). A physical Clearpath Jackal robot will be provided by the competition sponsor, Clearpath Robotics, with the same standard sensor and actuator suites as in the simulation. However, a sim-to-real gap may still exist due to factors such as friction coefficient between physical wheels and venue floor, electric motor impedance and resistance, real-world sensor noise distribution, etc. The top three teams will be invited to compete in the physical competition. In case a team is not able to attend the conference in person, the organizers will run their submitted navigation stack on their behalf on the physical robot at the conference. The team who achieves the highest collision-free navigation success rate and shortest traversal time wins the competition. 
+						<!-- In case of a fully virtual conference, the winner will be determined based on simulation results.  -->
+					</p>
+					<br>
+					<center>
+					<img src="challenge_images/physical_example.jpg" alt="Physical Example" width="600">
+					</center>
+					<p> 
+						Due to the overhead of the simulator in the simulation phase, we do not specifically constrain computation. We will use a computer with Intel Xeon Gold 6342 CPU @ 2.80 GHz to evaluate all submissions. However, during the physical competition, robot onboard computation will be limited to an Intel i3 CPU (i3-9100TE or similar) with 16GB of DDR4 RAM. GPUs are not available considering the small footprint of the LiDAR perception data. 
+					</p>
+
+					<p> 
+						Starting this year, we will introduce dynamic obstacles in our evaluation pipeline, both in the <a href="../DynaBARN/DynaBARN.html" target="_blank">DynaBARN</a> simulation environments and in physical test courses with iRobot Create robots acting as dynamic obstacles. As the first competition with dynamic obstacles, we will only reward good performance when facing dynamic obstacles in terms of extra bonuses, but not penalize poor performance. More details to come soon. 
+					</p>
+					<br>
+					<center>
+					<img src="challenge_images/dynabarn.gif" alt="DynaBARN Environments" width="600">
+					</center>
+					<br>
+					<center>
+					<img src="challenge_images/dynalflh.png" alt="Physical Environemnt with Dynamic Obstalces" width="300">
+					</center>
+					<br>
+					<br>
+				</section>
+
+				<section id="leaderboard">
+					<h2>Leaderboard</h2>
+					<h3>Real World</h3>
+
+					<h4>2025</h4>
+						<style>
+						table, th, td {
+						  border:1px solid black;
+						  text-align: center;
+						}
+						</style>
+	            		<table style="width:100%">
+	        				<tr>
+	        					<th>Ranking</th>
+						    	<th>Team</th>
+						    	<th>Success / Total Trials</th>
+						    	<th>Code Link</th>
+						  	</tr>
+						  	<tr>
+						  		<td>1</td>
+						    	<td><a href="https://www.kaist.ac.kr/en/" target="_blank">LiCS-KI</a></td>
+						    	<td>6/9</td>
+						    	<td><a href="https://github.com/damanikjosh/the-barn-challenge" target="_blank">GitHub</a></td>
+					  		</tr>
+					  		<tr>
+						  		<td>2</td>
+						    	<td><a href="https://www.ntu.edu.sg/" target="_blank">MLDA_EEE</a></td>
+						    	<td>5/9 (78.8s)</td>
+						    	<td><a href="https://github.com/MLDA-NTU/mlda-barn-2025" target="_blank">GitHub</a></td>
+					  		</tr>
+					  		<tr>
+						  		<td>3</td>
+						    	<td><a href="https://www.polyu.edu.hk/en/" target="_blank">AIMS</a></td>
+						    	<td>5/9 (108.8s)</td>
+						    	<td><a href="https://github.com/Longfei0/the-barn-challenge.git" target="_blank">GitHub</a></td>
+					  		</tr>
+						</table>
+
+					<h4>2023</h4>
+						<style>
+						table, th, td {
+						  border:1px solid black;
+						  text-align: center;
+						}
+						</style>
+	            		<table style="width:100%">
+	        				<tr>
+	        					<th>Ranking</th>
+						    	<th>Team</th>
+						    	<th>Success / Total Trials</th>
+						    	<th>Code Link</th>
+						  	</tr>
+						  	<tr>
+						  		<td>1</td>
+						    	<td><a href="https://www.kuleuven.be/english/kuleuven" target="_blank">KUL</a>+<a href="https://www.flandersmake.be/en" target="_blank">FM</a></td>
+						    	<td>9/9</td>
+						    	<td><a href="https://github.com/romulortr/barn-kul-fm/tree/main" target="_blank">GitHub</a></td>
+					  		</tr>
+					  		<tr>
+						  		<td>2</td>
+						    	<td><a href="https://www.inventec.com/en" target="_blank">INVENTEC</a></td>
+						    	<td>6/9</td>
+						    	<td><a href="https://github.com/inventec-ai-center/nav-competition-icra2023" target="_blank">GitHub</a></td>
+					  		</tr>
+					  		<tr>
+						  		<td>3</td>
+						    	<td><a href="https://www.ual.es/en" target="_blank">University of Almeria</a></td>
+						    	<td>5/9</td>
+						    	<td><a href="https://github.com/SRai22/barn-tps-astar-icra2023.git" target="_blank">GitHub</a></td>
+					  		</tr>
+						</table>
+
+					<h4>2022</h4>
+						<style>
+						table, th, td {
+						  border:1px solid black;
+						  text-align: center;
+						}
+						</style>
+	            		<table style="width:100%">
+	        				<tr>
+	        					<th>Ranking</th>
+						    	<th>Team</th>
+						    	<th>Success / Total Trials</th>
+						    	<th>Code Link</th>
+						  	</tr>
+						  	<tr>
+						  		<td>1</td>
+						    	<td><a href="https://amrl.cs.utexas.edu/" target="_blank">UT AMRL</a></td>
+						    	<td>8/9</td>
+						    	<td><a href="https://github.com/ShravanRavi2002/BARNSubmission" target="_blank">GitHub</a></td>
+					  		</tr>
+					  		<tr>
+						  		<td>2</td>
+						    	<td><a href="https://www.bezzorobotics.com/" target="_blank">UVA AMR</a></td>
+						    	<td>4/9</td>
+						    	<td><a href="https://github.com/nocholasrift/UVA-AMR-BARN--ICRA2022" target="_blank">GitHub</a></td>
+					  		</tr>
+					  		<tr>
+						  		<td>3</td>
+						    	<td><a href="https://sites.temple.edu/trail/" target="_blank">Temple TRAIL</a></td>
+						    	<td>2/9</td>
+						    	<td><a href="https://github.com/TempleRAIL/nav-competition-icra2022-drl-vo.git" target="_blank">GitHub</a></td>
+					  		</tr>
+						</table>
+						<center>
+							Real-world challenge includes three different obstacle courses. Each team has 30 minutes to finish five timed trials. Top three trials are counted. The team that finishes the most successful trials (reaching the goal without any collision) wins. In the case of a tie, the team with the fasted average traversal time wins.<br>
+						</center>
+
+					<h3>Simulation</h3>
+						<p>The scores and ranking have been updated using the new scoring metric (previous $4\textrm{OT}_i$ vs. current $2\textrm{OT}_i$, moving the previous performance upper bound from $0.25$ to the current $0.5$). See <a href="BARN_Challenge23.html#leaderboard" target="_blank">The BARN Challenge 2023 Leaderboard</a> for the previous scores using the old metric. </p>
+						<style>
+						table, th, td {
+						  border:1px solid black;
+						  text-align: center;
+						}
+						</style>
+	            		<table style="width:100%">
+	        				<tr>
+	        					<th>Ranking</th>
+						    	<th>Team</th>
+						    	<th>BARN (DynaBARN) Score</th>
+						    	<th>Comment</th>
+						  	</tr>
+						  	<tr>
+						  		<td>1</td>
+						    	<td style="color:red;">RobotiXX</td>
+						    	<td>0.4873 (0.1042)</td>
+						    	<td>George Mason University</td>
+					  		</tr>
+						  	<tr>
+						  		<td>2</td>
+						    	<td><a href="https://www.kaist.ac.kr/en/" target="_blank">LiCS-KI</a><sup>24</sup></td>
+						    	<td>0.4762</td>
+						    	<td>Korea Advanced Institute of Science and Technology</td>
+					  		</tr>
+						  	<tr>
+						  		<td>3</td>
+						    	<td><a href="https://www.polyu.edu.hk/en/" target="_blank">AIMS</a><sup>24</sup></td>
+						    	<td>0.4723</td>
+						    	<td>The Hong Kong Polytechnic University</td>
+					  		</tr>
+						  	<tr>
+						  		<td>4</td>
+						    	<td><a href="https://www.kuleuven.be/english/kuleuven" target="_blank">KUL</a>+<a href="https://www.flandersmake.be/en" target="_blank">FM</a><sup>23</sup></a></td>
+						    	<td>0.4641</td>
+						    	<td>KU Leuven & Flanders Make</td>
+					  		</tr>
+					  		<tr>
+						  		<td>5</td>
+						    	<td><a href="https://amrl.cs.utexas.edu/" target="_blank">UT AMRL</a><sup>22</sup></td>
+						    	<td>0.4594</td>
+						    	<td>The University of Texas at Austin</td>
+					  		</tr>
+					  		<tr>
+						  		<td>6</td>
+						    	<td><a href="https://www.ual.es/en" target="_blank">University of Almeria</a><sup>23</sup></a></td>
+						    	<td>0.4460</td>
+						    	<td>University of Almeria & Teladoc</td>
+					  		</tr>
+					  		<tr>
+						  		<td>7</td>
+						    	<td><a href="https://github.com/Daffan/nav-competition-icra2022/tree/LfH" target="_blank">LfLH</a><sup>b</sup></td>
+						    	<td>0.4354</td>
+						    	<td><a href="../LfH/LfH.html#lflh" target="_blank">Details</a></td>
+					  		</tr>
+						  	<tr>
+						  		<td>8</td>
+						    	<td><a href="https://www.inventec.com/en" target="_blank">INVENTEC</a><sup>23</sup></a></td>
+						    	<td>0.4206</td>
+						    	<td>Inventec Corporation</td>
+					  		</tr>
+					  		<tr>
+						  		<td>9</td>
+						    	<td><a href="https://github.com/Daffan/nav-competition-icra2022/tree/e2e" target="_blank">e2e</a><sup>b</sup></td>
+						    	<td>0.4083</td>
+						    	<td><a href="../../papers/navbenchmark.pdf" target="_blank">Details</a></td>
+					  		</tr>
+						  	<tr>
+						  		<td>10</td>
+						    	<td><a href="https://sites.temple.edu/trail/" target="_blank">Temple TRAIL</a><sup>22</sup></td>
+						    	<td>0.4039</td>
+						    	<td>Temple University</td>
+					  		</tr>
+					  		<tr>
+						  		<td>11</td>
+						    	<td>EIT-NUS<sup>24</sup></td>
+						    	<td>0.3795</td>
+						    	<td>Eastern Institute of Technology, Ningbo</td>
+					  		</tr>
+					  		<tr>
+						  		<td>12</td>
+						    	<td>Staxel<sup>23</sup></td>
+						    	<td>0.3710</td>
+						    	<td>Staxel</td>
+					  		</tr>
+					  		<tr>
+						  		<td>13</td>
+						    	<td style="color:red;">UVA AMR</td>
+						    	<td>0.3475</td>
+						    	<td>University of Virginia</td>
+					  		</tr>
+					  		<tr>
+						  		<td>14</td>
+						    	<td>UVA AMR<sup>23</sup></td>
+						    	<td>0.3475</td>
+						    	<td>University of Virginia</td>
+					  		</tr>
+					  		<tr>
+						  		<td>15</td>
+						    	<td><a href="https://www.bezzorobotics.com/" target="_blank">UVA AMR</a><sup>22</sup></td>
+						    	<td>0.3256</td>
+						    	<td>University of Virginia</td>
+					  		</tr>
+					  		<tr>
+					  			<td>16</td>
+						    	<td><a href="https://github.com/Daffan/nav-competition-icra2022/tree/applr" target="_blank">APPLR-DWA</a><sup>b</sup></td>
+						    	<td>0.3052</td>
+						    	<td><a href="../APPL/APPL.html#applr" target="_blank">Details</a></td>
+					  		</tr>
+					  		<tr>
+				  				<td>17</td>
+						    	<td><a href="https://github.com/Daffan/nav-competition-icra2022/tree/eband" target="_blank">E-Band</a><sup>b</sup></td>
+						    	<td>0.2832</td>
+						    	<td><a href="http://wiki.ros.org/eband_local_planner" target="_blank">Details</a></td>
+					  		</tr>
+					  		<tr>
+				  				<td>18</td>
+						    	<td><a href="https://www.ntu.edu.sg/" target="_blank">MLDA_EEE</a><sup>24</sup></td>
+						    	<td>0.2476</td>
+						    	<td>Nanyang Technological University, Singapore </td>
+					  		</tr>
+					  		<tr>
+					  			<td>19</td>
+						    	<td>Yiyuiii<sup>22</sup></td>
+						    	<td>0.2376</td>
+						    	<td>Nanjing University</td>
+					  		</tr>
+					  		<tr>
+					  			<td>20</td>
+						    	<td>The MECO Barners<sup>23</sup></td>
+						    	<td>0.2214</td>
+						    	<td>KU Leuven</td>
+					  		</tr>	
+					  		<tr>
+					  			<td>21</td>
+						    	<td><a href="https://github.com/Daffan/nav-competition-icra2022/tree/fast_dwa" target="_blank">Fast DWA</a><sup>b</sup></td>
+						    	<td>0.2047</td>
+						    	<td><a href="http://wiki.ros.org/dwa_local_planner" target="_blank">Details</a></td>
+					  		</tr>	
+					  		<tr>
+					  			<td>22</td>
+						    	<td>NavBot<sup>22</sup></td>
+						    	<td>0.1733</td>
+						    	<td>Indian Institute of Science, Bangalore</td>
+					  		</tr>	
+					  		
+					  		<tr>
+					  			<td>23</td>
+						    	<td><a href="https://github.com/Daffan/nav-competition-icra2022/tree/main" target="_blank">Default DWA</a><sup>b</sup></td>
+						    	<td> 0.1656</td>
+						    	<td><a href="http://wiki.ros.org/dwa_local_planner" target="_blank">Details</a></td>
+					  		</tr>
+					  		<tr>
+						  		<td>24</td>
+						    	<td>UT AMRL<sup>23</sup></td>
+						    	<td>Missing</td>
+						    	<td>The University of Texas at Austin</td>
+					  		</tr>
+					  		<tr>
+						  		<td>25</td>
+						    	<td>Temple TRAIL<sup>23</sup></td>
+						    	<td>Missing</td>
+						    	<td>Temple University</td>
+					  		</tr>
+					  		<tr>
+						  		<td>26</td>
+						    	<td>RIL<sup>23</sup></td>
+						    	<td>Missing</td>
+						    	<td>Indian Institute of Science, Bengaluru</td>
+					  		</tr>
+					  		<tr>
+					  			<td>27</td>
+						    	<td>Lumnonicity<sup>23</sup></td>
+						    	<td> NA </td>
+						    	<td>AICoE, Jio</td>
+					  		</tr>
+					  		<tr>
+				  				<td>28</td>
+						    	<td>Tartu Team<sup>24</sup></td>
+						    	<td>NA</td>
+						    	<td>University of Tartu</td>
+					  		</tr>
+					  		<tr>
+				  				<td>28</td>
+						    	<td>CCWSS<sup>24</sup></td>
+						    	<td>NA</td>
+						    	<td>Wuhan University of Science and Technology</td>
+					  		</tr>
+						</table>
+						<center>
+						<font color="red"> Red </font> denotes 2025 participants.<br>
+						<sup>24</sup> denotes 2024 participants.<br>
+						<sup>23</sup> denotes 2023 participants.<br>
+						<sup>22</sup> denotes 2022 participants.<br>
+						<sup>b</sup> denotes baselines.<br>
+						Last updated: February 17 2025. If you do not see your submission, it is still under evaluation.
+						</center>
+						<br>
+						<br>
+				</section>
+
+
+				<!-- info on downloading, file structure, readme stuff -->
+				<section id="participation">
+					<h2>Participation</h2>
+
+						We have standardized the entire navigation pipeline using the <a href="../BARN/BARN.html" target="_blank">BARN dataset</a> in a standardized Singularity container. You should only modify the navigation system, and leave other parts intact. You can develop your navigation system in your local environment or in a container. You will need to upload your code (e.g., to GitHub) and submit a <a href="https://github.com/Daffan/nav-competition-icra2022/blob/main/Singularityfile.def" target="_blank">Singularityfile.def</a> file which will access your code. We will build your Singularity container using the Singularityfile.def file you submitted, run the built container for evaluation, and then publish your score on our website. 
+						More detailed instructions can be found <a href="https://github.com/Daffan/nav-competition-icra2022" target="_blank">here</a>.
+						<br>
+						Please use this <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYFw_BVg-7lpXNVxQIX_xQKpFrU2m4jrXAVvrRv8pLzgLkLw/viewform?usp=sf_link" target="_blank">Submission Form</a> to submit your navigation stack to be evaluated by our standardized <a href="https://github.com/Daffan/nav-competition-icra2022" target="_blank">evaluation pipeline</a>.  
+
+					<!-- <h3>Download</h3>
+					<p>
+						To use the dataset, download the dataset at this <a href="../BARN/BARN_dataset.zip" target="_blank">link</a>. 
+						Within the dataset folder, there are folders for the Gazebo .world files, 
+						occupancy grid representations, C-space representations, 
+						the difficulty metrics for the environment, 
+						the paths through the environment, and pgm/yaml files for ROS map_server. 
+					</p> 
+					
+					<h3>Running Simulations</h3>
+					<p>
+						Simulations can be run on Ubuntu 18.04 with ROS Melodic using a Jackal robot. 
+						To run your own simulations on BARN, first download ROS Melodic on 
+						the <a href="http://wiki.ros.org/melodic/Installation/Ubuntu" target="_blank">ROS Website</a>, 
+						then install all Jackal-related packages using 
+						<a href="https://gist.github.com/vfdev-5/57a0171d8f5697831dc8d374839bca12" target="_blank">these instructions</a>. 
+						This <a href="https://github.com/dperille/jackal_timer" target="_blank">ROS package</a> can then be used to run simulations in Gazebo.
+					</p>
+					
+					<h3>Customizing BARN for Your Own Robot</h3>
+					<p>
+						Our dataset is configured for a <a href="https://clearpathrobotics.com/jackal-small-unmanned-ground-vehicle/" target="_blank">Jackal robot</a> 
+                        (508 x 430 x 250 mm). However, we have included <a href="https://github.com/dperille/jackal-map-creation" target="_blank">source code</a>
+                        to allow you to customize the dataset for your specific robot's size.
+                        With the dataset and the source code, you can create Gazebo world files with the 
+                        same configurations as the original dataset but with a different scale, or you
+                        can generate completely new configurations with different robot footprints, grid sizes 
+                        and cylinder sizes.
+                    </p> -->
+                    
+					<h3>Citing BARN</h3>
+                    <p>If you find BARN useful for your research, please cite the following <a href="../../papers/navdiffdataset_ssrr.pdf" target="_blank">paper</a>:</p>
+                    <div class = "code">
+					    @inproceedings{perille2020benchmarking,<br>
+						title = {Benchmarking Metric Ground Navigation},<br>
+						author = {Perille, Daniel and Truong, Abigail and Xiao, Xuesu and Stone, Peter},<br>
+						booktitle = {2020 IEEE International Symposium on Safety, Security and Rescue Robotics (SSRR)},<br>
+						year = {2020},<br>
+						organization = {IEEE}<br>
+                        }
+                    </div>
+                    <br>
+                    <br>
+                </section>
+                
+				
+                <section id="schedule">
+            	<h2>Schedule</h2>
+                	<style>
+						table, th, td {
+						  border:1px solid black;
+						  text-align: center;
+						}
+					</style>
+            		<table style="width:100%">
+        				<tr>
+					    	<th>Date</th>
+					    	<th>Event</th>
+					  	</tr>
+					  	<tr>
+					    	<td>January 1 2025</td>
+					    	<td>Online submission open</td>
+					  	</tr>
+					  	<tr>
+					    	<td>April 1 2025</td>
+					    	<td>Soft Submission Deadline<sup>1</sup></td>
+					  	</tr>
+					  	<tr>
+					    	<td>April 15 2025</td>
+					    	<td>1st Round Physical Competition Invitations</td>
+					  	</tr>
+					  	<tr>
+					    	<td>May 1 2025</td>
+					    	<td>Hard Submission Deadline<sup>2</sup></td>
+					  	</tr>
+					  	<tr>
+					    	<td>May 8 2025</td>
+					    	<td>2nd Round Physical Competition Invitations</td>
+					  	</tr>
+					  	<tr>
+					    	<td>May 20 2025 9a-6pm</td>
+					    	<td>Team Set-up </td>
+					  	</tr>
+					  	<tr>
+					    	<td>May 21 2025 9a-noon</td>
+					    	<td>Physical Competition Obstacle Course 1 </td>
+					  	</tr>
+					  	<tr>
+					    	<td>May 21 2025 1p-4p</td>
+					    	<td>Physical Competition Obstacle Course 2</td>
+					  	</tr>
+					  	<tr>
+					    	<td>May 22 2025 9a-noon</td>
+					    	<td>Physical Competition Obstacle Course 3</td>
+					  	</tr>
+					  	<tr>
+					    	<td>May 22 2025 1p-2p</td>
+					    	<td>Award Ceremony and Open Discussions</td>
+					  	</tr>
+					</table>
+					<center>
+						<sup>1</sup>Deadline to guarantee an invitation to the final physical competition given good navigation performance in simulation.<br>
+						<sup>2</sup>Deadline to participate in the simulation competition. However, final physical competition eligibility will depend on the available capacity and travel arrangement made beforehand.<br>
+					</center>
+					<br>
+                    <br>
+                </section>
+
+                <section id="organizers">
+                    <h2>Organizers</h2>
+						<div class="roster">
+  
+						  	<div class="headshot">
+						  		<a href="../../" target="_blank"><img src="../../xuesu_website_files/xuesu_xiao.jpg" alt="Xuesu Xiao" height="100"></a>
+						      	<div class="roster-name">
+					          		<b>Xuesu Xiao </b><br>
+					          		George Mason University
+					    	  	</div><!--roster-name-->
+					  		</div><!--headshot-->
+						  
+						  	<div class="headshot">
+						  		<a href="https://daffan.github.io/" target="_blank"><img src="challenge_images/zifan.jpg" alt="Zifan Xu" height="100"></a>
+						      	<div class="roster-name">
+						        	<b>Zifan Xu </b><br>
+						        	UT Austin
+					    		</div><!--roster-name-->
+						  	</div><!--headshot-->
+
+						  	<div class="headshot">
+						  		<a href="https://www.linkedin.com/in/aniket-datar-9187a48b/" target="_blank"><img src="challenge_images/aniket.jpg" alt="Aniket Datar" height="100"></a>
+						      	<div class="roster-name">
+						        	<b>Aniket Datar</b><br>
+						        	George Mason University
+					    		</div><!--roster-name-->
+						  	</div><!--headshot-->
+
+						  	<div class="headshot">
+						  		<a href="https://scholar.google.com/citations?user=Ndp8dmgAAAAJ&hl=en" target="_blank"><img src="challenge_images/saad.jpeg" alt="Saad Abdul Ghani" height="100"></a>
+						      	<div class="roster-name">
+						        	<b> Saad Abdul Ghani </b><br>
+						        	George Mason University
+					    		</div><!--roster-name-->
+						  	</div><!--headshot-->
+
+						  	<div class="headshot">
+						  		<a href="https://www.cs.utexas.edu/~pstone/" target="_blank"><img src="challenge_images/peter.jpg" alt="Peter Stone" height="100"></a>	      	
+						      	<div class="roster-name">
+						        	<b> Peter Stone </b><br>
+						        	UT Austin <br>
+						        	Sony AI
+					    		</div><!--roster-name-->
+						  	</div><!--headshot-->
+
+					 	  	<div class="headshot">
+						  		<a href="https://clearpathrobotics.com/" target="_blank"><img src="challenge_images/clearpath.png" alt="Clearpath Robotics" height="100"></a>	      	
+						      	<div class="roster-name">
+						        	<b> Clearpath Robotics </b><br>
+						        	Competition Sponsor
+					    		</div><!--roster-name-->
+						  	</div><!--headshot-->
+						  
+						</div><!--roster-->
+                    <br>
+                    <br>
+                </section>
+
+                <section id="links">
+					<h2>Links</h2>
+					<ul>
+						<li><a href="../BARN/BARN_dataset.zip" target="_blank">BARN Dataset</a></li>
+						<li><a href="../../papers/navdiffdataset_ssrr.pdf" target="_blank">BARN Paper</a></li>
+						<li><a href="https://www.youtube.com/watch?v=fd94n2ograU" target="_blank">BARN Video</a></li>
+						<li><a href="https://www.youtube.com/watch?v=sBRGrfbrEBU" target="_blank">BARN Presentation at SSRR 2020</a></li>
+						<li><a href="https://github.com/dperille/jackal-map-creation" target="_blank">Source Code to Customize BARN</a></li>
+						<li><a href="https://github.com/dperille/jackal_timer" target="_blank">Source Code to Run Simulation Trials</a></li>
+						<li><a href="../BARN/sim_trial_results.zip" target="_blank">Example Simulation Trial Results</a></li>
+						<li><a href="../../papers/barn24_report.pdf" target="_blank">The BARN Challenge 2024 Report</a></li>
+						<li><a href="../../papers/barn23_report.pdf" target="_blank">The BARN Challenge 2023 Report</a></li>
+						<li><a href="../../papers/barn22_report.pdf" target="_blank">The BARN Challenge 2022 Report</a></li>
+                    </ul>
+                    <br>
+                    <br>
+                </section>
+                
+
+                <!--Contact section-->
+                <section id="contact">
+                    <h2>Contact</h2>
+                    <p>
+                    	For questions, please contact: <br><br>
+                        Dr. Xuesu Xiao <br>
+                        Assistant Professor <br>
+                        Department of Computer Science <br>
+                        George Mason University <br>
+                        4400 University Drive, Fairfax, VA 22030, USA <br>
+                        <a href="mailto:xiao@gmu.edu" target="_blank">xiao@gmu.edu</a> <br>
+                    </p>
+                    <br>
+                    <br>
+                </section>
+			</main>
+		</div>
+
+		<section id="showcase2">
+		</section>
+
+		<div>
+			<footer id="main-footer">
+			</footer>
+		</div>
+		
+	</body>
+
+</html>
