@@ -52,9 +52,9 @@ a:active{
 
 #sidebar{
 	float: left;
-	width: 15%;
+	width: 20%;
 	height: auto;
-	position: fixed;
+	position: auto;
 
 	/*background-color: #aaaa;*/
 	background-color: black;
@@ -88,14 +88,6 @@ a:active{
 }
 
 
-#main-header{
-	/*background-color: darkblue;*/
-	background-size:  10% auto;
-	background-image: url('../challenge_images/checker_flag.jpg');
-	height: 50pt;
-
-}
-
 #main-header h1{
 	text-decoration: none;
 }
@@ -105,7 +97,7 @@ a:active{
 	width: 70%;
 	margin: none;
 	overflow: hidden;
-	/*float: left;*/
+	/* float: left; */
 }
 
 
@@ -114,6 +106,30 @@ a:active{
 	display: block;
 	float: right;
 	background-color: darkblue;
+}
+
+table {
+    width: 100%
+}
+
+table {
+    border: 1px solid #ccc;
+    margin-bottom: 32px;
+    text-align: left
+}
+
+th {
+    font-family: 'Arvo', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px;
+    background: #232323;
+    color: #FDFEFB
+}
+
+td {
+    padding: 10px;
+    background: #ccc
 }
 
 #navbar ul{
@@ -133,8 +149,9 @@ a:active{
 }
 
 #showcase1{
-	background: url('../challenge_images/image_1.png');
+	background: url('../challenge_gif/gif_1.gif');
 	background-size: cover;
+	margin-left: 15px;
 	height: 280px; 
 	margin-bottom: 30px;
 	text-align: center;
@@ -142,18 +159,13 @@ a:active{
 }
 
 #showcase2{
-	background: url('../challenge_images/lfh.png');
+	background: url('../challenge_gif/gif_3.gif');
 	background-size: cover;
 	height: 220px; 
 	margin-top: 10px;
+	margin-left: 15px;
 	text-align: center;
 	width: 100%;
-}
-
-#main-footer{
-	background-size:  10% auto;
-	background-image: url('../challenge_images/checker_flag.jpg');
-	height: 50pt;
 }
 
 div.roster {
